@@ -13,7 +13,7 @@ import java.util.List;
 
 @Controller //처음에 스프링 컨테이너 생김, @Controller는 멤버 컨트롤로 객체 생성 해서 스프링에 넣음, 스프링이 이걸 관리.=스프링 빈이 관리된다.
 public class MemberController {
-    //=new MemberService를 하면 멤버 컨트롤러 외 여러 컨트롤러들이 MemberService를 쓸 수 있음. but 이건 여러개 인스턴스 생성할 필요가 없음
+    //=new MemberService 하면 멤버 컨트롤러 외 여러 컨트롤러들이 MemberService 쓸 수 있음. but 이건 여러개 인스턴스 생성할 필요가 없음
     private final MemberService memberService;//컨테이너에 등록
 
 
