@@ -1,10 +1,12 @@
 package hello.hellospring.repository;
 
 import hello.hellospring.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
 
+//@Repository
 public interface MemberRepository {
     Member save(Member member);//회원 저장하면 저장된 회원 반환
     Optional<Member> findById(Long id);//find로 저장된거 찾음. 없으면null반환?
